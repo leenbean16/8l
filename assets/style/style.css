@@ -114,6 +114,7 @@ h1 {
 }
 
 #top {
+    padding-top: 50px;
     color: #fff;
     transform: rotateX(90deg) translate3d(0, 0, 400px);
     -webkit-transform: rotateX(90deg) translate3d(0, 0, 400px);
@@ -343,6 +344,7 @@ ol, ul {
 }
 
 .contact-us {
+    padding-top: 137px;
     padding-bottom: 5px;
 }
 
