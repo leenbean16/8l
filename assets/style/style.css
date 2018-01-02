@@ -1,0 +1,371 @@
+body {
+    padding: 16px;
+    overflow: hidden;
+    font-size: 13px;
+    background-image: url("../images/spider.png");
+    background-attachment: fixed;
+    background-size: 120%;
+}
+
+
+p {
+    background: transparent;
+    font-family: 'Codystar', cursive;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 13px;
+    float: left;
+    font-weight: bold;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.animated {
+    float: left;
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotateX(45deg);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg) rotateX(30deg);
+    }
+    100% {
+        transform: rotateY(360deg) rotateX(30deg);
+    }
+}
+
+#container {
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    height: 800px;
+    perspective: 1600px;
+    -webkit-perspective: 1600px;
+    padding: 100px;
+}
+
+#cube {
+    height: 100%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: 0.50s;
+    -webkit-transition: 0.50s;
+    transition-delay: .50s;
+    -webkit-transition-delay: .50s
+}
+
+#cube div {
+    background: black;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 25pt;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+    
+
+.show-top {
+    transform: rotateX(-90deg);
+}
+
+.show-bottom {
+    transform: rotateX(90deg);
+}
+
+.show-right {
+    transform: rotateY(-90deg);
+}
+
+.show-left {
+    transform: rotateY(90deg);
+}
+
+.show-back {
+    transform: rotateY(180deg);
+}
+
+#middle {
+    color: #fff;
+    transform: translate3d(0, 0, 400px);
+    -webkit-transform: translate3d(0, 0, 400px);
+    overflow-y: scroll;
+}
+
+#back {
+    background: #000;
+    color: #fff;
+    transform: rotateY( 180deg) translate3d(0, 0, 400px);
+    -webkit-transform: rotateY( 180deg) translate3d(0, 0, 400px);
+}
+
+#top {
+    color: #fff;
+    transform: rotateX(90deg) translate3d(0, 0, 400px);
+    -webkit-transform: rotateX(90deg) translate3d(0, 0, 400px);
+}
+
+#bottom {
+    color: #fff;
+    background: #000;
+    transform: rotateX(-90deg) translate3d(0, 0, 400px);
+    -webkit-transform: rotateX(-90deg) translate3d(0, 0, 400px);
+}
+
+#right {
+    color: #fff;
+    background: #000;
+    transform: rotateY(90deg) translate3d(0, 0, 400px);
+    -webkit-transform: rotateY(90deg) translate3d(0, 0, 400px);
+}
+
+#left {
+    color: #fff;
+    background: #000;
+    transform: rotateY(-90deg) translate3d(0, 0, 400px);
+    -webkit-transform: rotateY(-90deg) translate3d(0, 0, 400px);
+}
+
+.zoom-out {
+    transition-duration: .5s;
+    transform: translateZ(-200px);
+}
+
+.inner-body {
+    overflow: scroll;
+    background: inherit;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+}
+
+.logo {
+    width: 15%;
+    margin-top: 40px;
+    margin-left: 43.5%;
+}
+
+
+
+/*// ----- svg animation 8L
+*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Codystar);
+
+
+/*html,
+body {
+    //   height: 100%;
+    // font-weight: 800;
+}
+
+// body{
+//   background: #030321;
+//   font-family: Arial;
+// }
+*/
+svg {
+    display: block;
+    font: 3.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+    margin-left: -75px;
+}
+
+.text-copy {
+    fill: #262626;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 7.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #D55F4B;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #2b9f5e;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #f1c83c;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #533d4a;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #000000;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+
+/*// ----- cool text right*/
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+
+span {
+    transform: skew(-40deg);
+    display: block;
+    float: left;
+    text-shadow: #ffffff 0.5px 0.5px, #ffffff 1px 1px, #ffffff 2px 2px, #ffffff 3px 3px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+section.container-contact {
+    background-color: red;
+}
+
+.title-f {
+    transform: translateX(-50%) rotate(-30deg);
+    display: block;
+    font-size: 50px;
+    float: left;
+    width: 550px;
+    left: 50%;
+    position: relative;
+    line-height: 60px;
+}
+
+span {
+    transform: skew(-40deg);
+    display: block;
+    float: left;
+    text-shadow: #515151 1px 1px, #515151 2px 2px, #515151 3px 3px, #515151 4px 4px, #515151 5px 5px, #515151 6px 6px;
+    min-width: 20px;
+    min-height: 10px;
+    position: relative;
+}
+
+.line-one a {
+    margin-top: 20px;
+    color: #D55F4B;
+}
+
+.line-two a {
+    color: #2b9f5e;
+}
+
+.line-three a {
+    color: #f1c83c;
+}
+
+div .yellow {
+    background-color: yellow;
+}
+
+.lina {
+    width: 50%;
+    margin-left: 22%;
+    margin-top: 100px;
+}
+
+.alex {
+    width: 22%;
+    margin-left: 40%;
+    margin-top: 100px;
+}
+
+p.bio {
+    width: 87%;
+    margin-top: 15px;
+}
+
+
+ol, ul {
+    list-style: web;
+    position: absolute;
+}
+
+.box-nav {
+    width: 167px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Codystar', cursive;
+}
+
+
+.page-nav {
+    background-color: #111111;
+    margin: -17px;
+    padding: 10px;
+    width: 170px;
+    height: 100vw;
+    position: absolute;
+
+}
+
+.name {
+    font-family: codystar;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-bottom: -65px;
+}
+
+.contact-us {
+    padding-bottom: 5px;
+}
+
+a.link {
+    font-family: 'Codystar', cursive;
+    font-size: 13px;
+    position: relative;
+    float: left;
+    margin-left: 46.5%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.box-nav:focus,
+.box-nav:active:focus{
+    outline:none;
+}
+
+.box-nav:focus{
+    text-decoration:none;
+}
+.box-nav:hover{
+    text-decoration:none;
+}
