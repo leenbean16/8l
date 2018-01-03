@@ -22,27 +22,27 @@ const animations = [{
     class: 'spin'
 }]
 
-
-
-$(window).on("resize", function() {
-    console.log('resize')
+const resizeCube =  function() {
     document.documentElement.style.
     setProperty('--cube-height', ($(window).innerHeight()) + "px")
     document.documentElement.style.
     setProperty('--half-height', ($(window).innerHeight() / 2) + "px")
     document.documentElement.style.
     setProperty('--double-height', ($(window).innerHeight() * 2) + "px")
-});
+}
 
-$(document).ready( function() {
+$(window).on("resize", resizeCube);
+
+$(document).ready(function() {
+    resizeCube()
     const page = window.location.pathname
     $('#cube').addClass('instantChange')
-    setTimeout(function(){$('#cube').removeClass('instantChange')}, 1000)
     Object.keys(urlMapObj).forEach(cubeSide => {
         if (urlMapObj[cubeSide] === page) {
             $('#cube').addClass(cubeSide + ' instantChange')
         }
     })
+    $('#cube').removeClass('instantChange')
 })
 
 
@@ -90,26 +90,8 @@ const changeSideClickEvent = function(animations = [], urlMapObj = urlMapObjDefa
 }
 
 
-$('.test').on('click', changeSideClickEvent([], urlMapObj))
+$('.box-nav').on('click', changeSideClickEvent([], urlMapObj))
 //<button class="test" data-zoomOut = 'false' data-side="show-top">top</button>
-$("#show-top-btn").on('click', function() {
-    replaceClass("show-top");
-})
-$("#show-bottom-btn").on('click', function() {
-    replaceClass("show-bottom");
-})
-$("#show-middle-btn").on('click', function() {
-    replaceClass("")
-})
-$("#show-left-btn").on('click', function() {
-    replaceClass("show-left")
-})
-$("#show-right-btn").on('click', function() {
-    replaceClass("show-right")
-})
-$("#show-back-btn").on('click', function() {
-    replaceClass("show-back")
-})
 
 $(document).ready(function() {
     //to cancel and set a timer
@@ -130,7 +112,9 @@ $(document).ready(function() {
                 $(document).off('mousemove')
                 //start new one to stop screen saver
                 $(document).mousemove(function(e) {
-                    $("#cube").removeClass("spin")
+                    setTimeout(() => {
+                        $("#cube").removeClass("spin")
+                    }, 500)
                     $(document).off('mousemove')
                     $(document).mousemove(screensave)
                 })
