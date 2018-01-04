@@ -105,15 +105,15 @@ $(document).ready(function() {
         timer = setInterval(() => {
             //increase counter ever cycle
             counter++
-            if (counter === 30) {
+            if (counter === 3) {
                 clearInterval(timer)
-                $("#cube").addClass("spin")
+                $("#cube").addClass("spin zoom-out")
                 //turn off listeners
                 $(document).off('mousemove')
                 //start new one to stop screen saver
                 $(document).mousemove(function(e) {
                     setTimeout(() => {
-                        $("#cube").removeClass("spin")
+                        $("#cube").removeClass("spin zoom-out")
                     }, 500)
                     $(document).off('mousemove')
                     $(document).mousemove(screensave)

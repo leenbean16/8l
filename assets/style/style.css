@@ -322,13 +322,15 @@ a.link {
     position:  absolute;
     overflow: unset;
     margin-top: -25px;
-    font-size: 20px;
+    font-size: 20px
+    margin-left: 250px;;
 }
 
 p.home-page {
     height: 50px;
     padding-right: 0px;
-    width: 0px;
+    margin-left: -250px;
+    width: 200px;
     background: #000000;
     color: #FFFFFF;
     color: transparent;
@@ -342,12 +344,14 @@ p.home-page {
 p.nav-text:hover {
     width: 200px;
     color: #FFFFFF;
+    margin-left: 0px;
 }
 
 p.about-lina {
     height: 50px;
     padding-right: 0px;
-    width: 0px;
+    margin-left: -250px;
+    width: 200px;
     background: #000000;
     color: #FFFFFF;
     color: transparent;
@@ -361,12 +365,14 @@ p.about-lina {
 p.about-lina:hover {
     width: 200px;
     color: #FFFFFF;
+    margin-left: 0px;
 }
 
 p.about-alex {
     height: 50px;
     padding-right: 0px;
-    width: 0px;
+    margin-left: -250px;
+    width: 200px;
     background: #000000;
     color: #FFFFFF;
     color: transparent;
@@ -380,12 +386,14 @@ p.about-alex {
 p.about-alex:hover {
     width: 200px;
     color: #FFFFFF;
+    margin-left: 0px;
 }
 
 p.projects-page {
     height: 50px;
     padding-right: 0px;
-    width: 0px;
+    margin-left: -250px;
+    width: 200px;
     background: #000000;
     color: #FFFFFF;
     color: transparent;
@@ -399,12 +407,14 @@ p.projects-page {
 p.projects-page:hover {
     width: 200px;
     color: #FFFFFF;
+    margin-left: 0px;
 }
 
 p.work-page {
     height: 50px;
     padding-right: 0px;
-    width: 0px;
+    margin-left: -250px;
+    width: 200px;
     background: #000000;
     color: #FFFFFF;
     color: transparent;
@@ -417,6 +427,7 @@ p.work-page {
 
 p.work-page:hover {
     width: 200px;
+    margin-left: 0px;
     color: #FFFFFF;
 }
 
@@ -424,7 +435,8 @@ p.contact-page {
     height: 50px;
     padding-left: -50px;
     padding-right: 0px;
-    width: 0px;
+    margin-left: -250px;
+    width: 200px;
     background: #000000;
     color: #FFFFFF;
     color: transparent;
@@ -438,6 +450,7 @@ p.contact-page {
 p.contact-page:hover {
     width: 200px;
     color: #FFFFFF;
+    margin-left: 0px;
 }
 
 
