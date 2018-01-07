@@ -2,7 +2,7 @@ body {
     padding: 16px;
     overflow: hidden;
     font-size: 13px;
-    background-image: url("../images/spider.png");
+    background-image: url("spider.png");
     background-attachment: fixed;
     background-size: 120%;
 }
