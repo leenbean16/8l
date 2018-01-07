@@ -105,7 +105,7 @@ $(document).ready(function() {
         timer = setInterval(() => {
             //increase counter ever cycle
             counter++
-            if (counter === 3) {
+            if (counter === 30) {
                 clearInterval(timer)
                 $("#cube").addClass("spin zoom-out")
                 //turn off listeners

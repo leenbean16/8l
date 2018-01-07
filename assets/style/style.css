@@ -7,15 +7,15 @@ body {
 }
 
 
-p {
+p, .home-paragraph {
     background: transparent;
-    font-family: 'Codystar', cursive;
+    font-family: 'Roboto Mono', monospace;
     padding-left: 50px;
     padding-right: 50px;
     color: #FFFFFF;
     font-size: 13px;
+    line-height: 15px;
     float: left;
-    font-weight: bold;
     text-align: justify;
 }
 
@@ -36,7 +36,8 @@ h1 {
     font-size: 25pt;
 }
 
-
+.EightLAnimation {
+}
 
 
 #middle {
@@ -112,10 +113,8 @@ body {
 svg {
     display: block;
     font: 3.5em 'Montserrat';
-    width: 960px;
-    height: 300px;
     margin: 0 auto;
-    margin-left: -75px;
+    margin-left: 2px;
 }
 
 .text-copy {
@@ -249,13 +248,12 @@ ul {
 
 .box-nav {
     width: 50px;
-    height: 50px;
     background: transparent;
     border: none;
     color: white;
     font-size: 15px;
     text-align: center;
-    font-family: 'Codystar', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .page-nav {
@@ -268,7 +266,7 @@ ul {
 }
 
 .name {
-    font-family: codystar;
+    font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     padding: 20px;
     padding-bottom: 0px;
@@ -281,7 +279,7 @@ ul {
 }
 
 a.link {
-    font-family: 'Codystar', cursive;
+    font-family: 'Roboto Mono', monospace;
     font-size: 13px;
     position: relative;
     float: left;
@@ -306,34 +304,28 @@ a.link {
 }
 
 .fa {
-    margin-right: 40px;
+    margin-right: auto;
     color: white;
-    margin-top: 15px;
     text-align: center;
 }
 
 .nav-text {
-    color: transparent;
     font-weight: bold;
     font-family: 'Fjalla One', sans-serif;
-    margin-left: -50px;
+    margin-left: 0px;
     width: 187px;
+    color:  black;
     word-wrap: normal;
     position:  absolute;
     overflow: unset;
-    margin-top: -25px;
+    margin-top: 0px;
     font-size: 20px
-    margin-left: 250px;;
+    margin-left: 250px;
 }
 
-p.home-page {
-    height: 50px;
+p.nav-icon {
     padding-right: 0px;
-    margin-left: -250px;
-    width: 200px;
-    background: #000000;
     color: #FFFFFF;
-    color: transparent;
     -webkit-transition-property: width;
     -webkit-transition-duration: 2s;
     -webkit-transition-delay: 0.1s;
@@ -341,116 +333,8 @@ p.home-page {
     transition-duration: 2s;
 }
 
-p.nav-text:hover {
-    width: 200px;
-    color: #FFFFFF;
-    margin-left: 0px;
-}
-
-p.about-lina {
-    height: 50px;
-    padding-right: 0px;
-    margin-left: -250px;
-    width: 200px;
-    background: #000000;
-    color: #FFFFFF;
-    color: transparent;
-    -webkit-transition-property: width;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-delay: 0.1s;
-    transition-property: width;
-    transition-duration: 2s;
-}
-
-p.about-lina:hover {
-    width: 200px;
-    color: #FFFFFF;
-    margin-left: 0px;
-}
-
-p.about-alex {
-    height: 50px;
-    padding-right: 0px;
-    margin-left: -250px;
-    width: 200px;
-    background: #000000;
-    color: #FFFFFF;
-    color: transparent;
-    -webkit-transition-property: width;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-delay: 0.1s;
-    transition-property: width;
-    transition-duration: 2s;
-}
-
-p.about-alex:hover {
-    width: 200px;
-    color: #FFFFFF;
-    margin-left: 0px;
-}
-
-p.projects-page {
-    height: 50px;
-    padding-right: 0px;
-    margin-left: -250px;
-    width: 200px;
-    background: #000000;
-    color: #FFFFFF;
-    color: transparent;
-    -webkit-transition-property: width;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-delay: 0.1s;
-    transition-property: width;
-    transition-duration: 2s;
-}
-
-p.projects-page:hover {
-    width: 200px;
-    color: #FFFFFF;
-    margin-left: 0px;
-}
-
-p.work-page {
-    height: 50px;
-    padding-right: 0px;
-    margin-left: -250px;
-    width: 200px;
-    background: #000000;
-    color: #FFFFFF;
-    color: transparent;
-    -webkit-transition-property: width;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-delay: 0.1s;
-    transition-property: width;
-    transition-duration: 2s;
-}
-
-p.work-page:hover {
-    width: 200px;
-    margin-left: 0px;
-    color: #FFFFFF;
-}
-
-p.contact-page {
-    height: 50px;
-    padding-left: -50px;
-    padding-right: 0px;
-    margin-left: -250px;
-    width: 200px;
-    background: #000000;
-    color: #FFFFFF;
-    color: transparent;
-    -webkit-transition-property: width;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-delay: 0.1s;
-    transition-property: width;
-    transition-duration: 2s;
-}
-
-p.contact-page:hover {
-    width: 200px;
-    color: #FFFFFF;
-    margin-left: 0px;
+p.nav-icon:hover {
+    color: #000000;
 }
 
 

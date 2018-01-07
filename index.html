@@ -5,6 +5,7 @@
     <title>8L Developers</title>
     <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/style/reset.css">
@@ -18,33 +19,33 @@
         <div class="page-nav">
             <ul>
                 <li>
-                    <button class="box-nav" data-side="show-middle">
-                        <p class="nav-text home-page"><i class="fa fa-home fa-1x"></i>Home</p>
+                    <button class="box-nav" id="show-middle-btn" data-side="show-middle">
+                        <p class="nav-text home-page">Home</p><i class="fa fa-home fa-1x nav-icon"></i>
                     </button>
                 </li>
                 <li>
-                    <button class="box-nav" id="show-left-btn">
-                        <p class="nav-text about-lina">About Lina</p><i class="fa fa-female fa-1x"></i>
+                    <button class="box-nav" id="show-left-btn" data-side="show-left">
+                        <p class="nav-text about-lina">About Lina</p><i class="fa fa-female fa-1x nav-icon"></i>
                     </button>
                 </li>
                 <li>
-                    <button class="box-nav" id="show-right-btn">
-                        <p class="nav-text about-alex">About Alex</p><i class="fa fa-male fa-1x"></i>
+                    <button class="box-nav" id="show-right-btn" data-side="show-right">
+                        <p class="nav-text about-alex">About Alex</p><i class="fa fa-male fa-1x nav-icon"></i>
                     </button>
                 </li>
                 <li>
-                    <button class="box-nav" id="show-top-btn">
-                        <p class="nav-text projects-page">Projects</p><i class="fa fa-code fa-1x"></i>
+                    <button class="box-nav" id="show-top-btn" data-side="show-top">
+                        <p class="nav-text projects-page">Projects</p><i class="fa fa-code fa-1x nav-icon"></i>
                     </button>
                 </li>
                 <li>
-                    <button class="box-nav" id="show-bottom-btn">
-                        <p class="nav-text work-page">Work</p><i class="fa fa-briefcase fa-1x"></i>
+                    <button class="box-nav" id="show-bottom-btn" data-side="show-bottom">
+                        <p class="nav-text work-page">Work</p><i class="fa fa-briefcase fa-1x nav-icon"></i>
                     </button>
                 </li>
                 <li>
-                    <button class="box-nav" id="show-back-btn">
-                        <p class="nav-text contact-page">Contact Us</p><i class="fa fa-address-card-o fa-1x"></i>
+                    <button class="box-nav" id="show-back-btn" data-side="show-back">
+                        <p class="nav-text contact-page">Contact Us</p><i class="fa fa-address-card-o fa-1x nav-icon"></i>
                     </button>
                 </li>
             </ul>
@@ -74,7 +75,8 @@
             </div>
             <div id="middle">
                 <div class="inner-body">
-                    <svg class="animated fadeIn" viewBox="0 0 960 300">
+                    <div class="animated fadeIn EightLAnimation">
+                    <svg viewBox="0 0 960 300">
                         <symbol id="s-text">
                             <text text-anchor="middle" x="50%" y="80%">8L</text>
                         </symbol>
@@ -86,8 +88,9 @@
                             <use xlink:href="#s-text" class="text-copy"></use>
                         </g>
                     </svg>
-                    <p>As developers, we have one plan – to make awesome things people actually find useful. And so, we made it our goal to tap into new technologies and play around with cutting-edge solutions. We’re only just getting started though. We see every project as a fresh opportunity – we approach each and every one from an exciting new angle. Thanks to our teamwork and collaboration, we’re able to take complex concepts and make them a reality, channeling our talents to be as effective as possible for our clients. Just because something is designed to be useful, doesn’t mean it can’t be beautiful or fun too. If you bring us an idea, we’ll bring it to life.</p>
+                    <p id="home-paragraph">As developers, we have one plan – to make awesome things people actually find useful. And so, we made it our goal to tap into new technologies and play around with cutting-edge solutions. We’re only just getting started though. We see every project as a fresh opportunity – we approach each and every one from an exciting new angle. Thanks to our teamwork and collaboration, we’re able to take complex concepts and make them a reality, channeling our talents to be as effective as possible for our clients. Just because something is designed to be useful, doesn’t mean it can’t be beautiful or fun too. If you bring us an idea, we’ll bring it to life.</p>
                     <img class="logo animated fadeIn" src="./assets/images/logo8l.png">
+                    </div>
                 </div>
             </div>
             <div id="bottom">
