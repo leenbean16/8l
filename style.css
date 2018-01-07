@@ -323,6 +323,8 @@ ol, ul {
     font-size: 15px;
     text-align: left;
     font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -344,7 +346,6 @@ ol, ul {
 }
 
 .contact-us {
-    padding-top: 137px;
     padding-bottom: 5px;
 }
 
