@@ -2,7 +2,7 @@ body {
     padding: 16px;
     overflow: hidden;
     font-size: 13px;
-    background-image: url("spider.png");
+    background-image: url("../imgs/spider.png");
     background-attachment: fixed;
     background-size: 120%;
 }
@@ -76,8 +76,6 @@ h1 {
     box-sizing: border-box;
     overflow: hidden;
 }
-
-    
 
 .show-top {
     transform: rotateX(-90deg);
@@ -161,11 +159,12 @@ h1 {
 }
 
 
-
 /*// ----- svg animation 8L
 */
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Codystar);
+
 
 
 /*html,
@@ -179,6 +178,7 @@ body {
 //   font-family: Arial;
 // }
 */
+
 svg {
     display: block;
     font: 3.5em 'Montserrat';
@@ -229,8 +229,11 @@ svg {
 }
 
 
+
 /*// ----- cool text right*/
-@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+
+/*@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 
 
 span {
@@ -272,9 +275,10 @@ span {
     min-width: 20px;
     min-height: 10px;
     position: relative;
-}
+}*/
 
-.line-one a {
+
+/*.line-one a {
     margin-top: 20px;
     color: #D55F4B;
 }
@@ -290,11 +294,12 @@ span {
 .line-three a {
     color: #f1c83c;
     padding-top: 80px;
-}
+}*/
 
-div .yellow {
+
+/*div .yellow {
     background-color: yellow;
-}
+}*/
 
 .lina {
     width: 50%;
@@ -308,13 +313,20 @@ div .yellow {
     margin-top: 100px;
 }
 
+.joe {
+    width: 30%;
+    margin-top: 80px;
+    margin-left: 35%;
+}
+
 p.bio {
     width: 87%;
     margin-top: 15px;
 }
 
 
-ol, ul {
+ol,
+ul {
     list-style: web;
     position: absolute;
 }
@@ -340,7 +352,6 @@ ol, ul {
     width: 170px;
     height: 100vw;
     position: absolute;
-
 }
 
 .name {
@@ -367,13 +378,14 @@ a.link {
 }
 
 .box-nav:focus,
-.box-nav:active:focus{
-    outline:none;
+.box-nav:active:focus {
+    outline: none;
 }
 
-.box-nav:focus{
-    text-decoration:none;
+.box-nav:focus {
+    text-decoration: none;
 }
-.box-nav:hover{
-    text-decoration:none;
+
+.box-nav:hover {
+    text-decoration: none;
 }
