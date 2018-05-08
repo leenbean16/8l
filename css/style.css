@@ -1,0 +1,71 @@
+div.icon-column {
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.dev-icon {
+    height: 200px;
+}
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 45px;
+    text-align: center;
+}
+
+p.dev,
+p.name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+.our-team {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+.icon-card {
+    padding: 25px;
+    margin: 2px;
+    color: #000000;
+    background: #E3E3E3;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.pic {
+    width: 200px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dev {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about-us {
+    height: 740px;
+}
+
+.lina {
+    width: 270px;
+}
+
+.icons-hero {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
