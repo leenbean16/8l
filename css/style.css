@@ -91,3 +91,9 @@ p.collapsible-contact {
 .btn-link:hover {
     text-decoration: none;
 }
+
+.svg-inline--fa.fa-w-14 {
+    width: .875em;
+    color: gray;
+    margin: 10px;
+}
