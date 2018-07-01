@@ -11,9 +11,10 @@ div.icon-column {
     height: 200px;
 }
 
-.title {
+h1.title {
     font-family: 'Lobster', cursive;
     font-size: 45px;
+    color: yellow !important;
     text-align: center;
 }
 
@@ -31,7 +32,7 @@ p.name {
 
 p {
     font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     display: block;
     margin-left: auto;
@@ -98,3 +99,4 @@ p.collapsible-contact {
     color: gray;
     margin: 10px;
 }
+

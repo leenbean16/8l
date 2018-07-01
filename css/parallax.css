@@ -1,0 +1,32 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    background-color: #eee;
+    position: relative;
+}
+
+#starfield {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #000;
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+    color: yellow;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: lowercase;
+    letter-spacing: -3px;
+    margin-top: 10%;
+}
