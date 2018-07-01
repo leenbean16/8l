@@ -12,26 +12,26 @@ div.icon-column {
 }
 
 h1.title {
-    font-family: 'Lobster', cursive;
+    font-family: 'Carter One', cursive;
     font-size: 45px;
-    color: yellow !important;
+    color: #FFFFFF !important;
     text-align: center;
 }
 
 p.dev,
 p.name {
-    font-family: 'Lobster', cursive;
+    font-family: 'Carter One', cursive;
     font-size: 30px;
 }
 
 .our-team {
-    font-family: 'Lobster', cursive;
+
     font-size: 30px;
     text-align: center;
 }
 
 p {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Carter One', cursive;
     font-size: 14px;
     text-align: center;
     display: block;
@@ -99,4 +99,3 @@ p.collapsible-contact {
     color: gray;
     margin: 10px;
 }
-
